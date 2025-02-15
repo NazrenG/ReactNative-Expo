@@ -28,8 +28,7 @@ export default function UserDetails() {
     <View style={styles.card}>
       <Text style={styles.name}>{user.name}</Text>
       <Text style={styles.name}>{user.phone}</Text>
-      <Text style={styles.name}>{user.email}</Text>
-      <Text style={styles.name}>{user.address.city}</Text>
+      <Text style={styles.name}>{user.email}</Text> 
     </View>
   );
 }

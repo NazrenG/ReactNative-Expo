@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Link } from "expo-router";
-
+import Shop from "../../assets/icons/shop.svg";
 const Home = () => {
   return (
     <View style={styles.container}>
       <Link style={styles.title} href="/users">
-        <Text >go users</Text>
+        <Text>go users</Text>
+        <Shop width="15px" height="15px" />
       </Link>
     </View>
   );
