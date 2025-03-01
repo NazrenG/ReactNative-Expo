@@ -1,0 +1,33 @@
+{
+    "cli": {
+      "version": ">= 3.10.0"
+    },
+    "build": {
+      "development": {
+        "distribution": "internal",
+        "android": {
+          "buildType": "apk"
+        }
+      },
+      "preview": {
+        "distribution": "internal",
+        "android": {
+          "buildType": "apk"
+        }
+      },
+      "production": {
+        "android": {
+          "buildType": "aab"
+        }
+      }
+    }
+    ,
+    "android": {
+  "buildType": "apk",
+  "experimental": {
+    "newGradleStructure": true
+  }
+}
+
+  }
+  
