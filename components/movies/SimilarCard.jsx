@@ -1,10 +1,20 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import React from "react";
+import { useRouter } from "expo-router";
 
 const SimilarCard = ({ item }) => {
+  const router = useRouter();
+
   return (
     <View>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() =>
+          router.push({
+            pathname: "movie/movieDetail",
+            params: { item: JSON.stringify(item) },
+          })
+        }
+      >
         <View>
           <Image
             style={styles.image}
@@ -20,12 +30,10 @@ const SimilarCard = ({ item }) => {
 };
 
 const styles = StyleSheet.create({
-   
   image: {
     width: 118,
     height: 173,
   },
-  
 });
 
 export default SimilarCard;

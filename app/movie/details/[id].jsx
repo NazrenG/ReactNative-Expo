@@ -16,7 +16,6 @@ import YoutubePlayer from "react-native-youtube-iframe";
 import * as SecureStore from "expo-secure-store";
 import Constants from "expo-constants";
 
-
 const MovieDetail = () => {
   const [token, setToken] = useState("");
   const width = Dimensions.get("window").width;
@@ -80,7 +79,8 @@ const MovieDetail = () => {
         },
       });
 
-      const responseData = await response.json();
+      const responseData = await response.json(); 
+      console.log("Similar Movies List:", responseData.similar);   
       if (response.ok) {
         setSimilars(responseData.similar);
       } else {

@@ -48,6 +48,7 @@ export default function RootLayout() {
       >
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="movie/index" />
+        <Stack.Screen name="movie/movieDetail" />
         <Stack.Screen name="board/index" />
         <Stack.Screen name="login/signup" options={{ headerShown: false }} />
         <Stack.Screen name="login/index" options={{ headerShown: false }} />

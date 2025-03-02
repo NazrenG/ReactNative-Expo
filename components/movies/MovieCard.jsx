@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, TouchableOpacity, Image } from "react-native";
 import React from "react";
 import { router } from "expo-router";
 
-const MovieCard = ({ item }) => {
+const MovieCard = ({ item }) => { 
   return (
     <View>
       <TouchableOpacity
